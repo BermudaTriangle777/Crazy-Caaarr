@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0">
+    <title>Bongo Cat Frame</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            background: black;
+            display: flex;
+            flex-direction: column;
+            height: 90vh;
+            justify-content: center;
+            align-items: center;
+            touch-action: none; /* Prevents pinch zoom */
+        }
+        .frame-container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .black-box {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 9.5%;
+            background: black;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .insta-icon {
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="frame-container">
+        <div class="black-box">
+            <a href="https://www.instagram.com/pravvveennnn?igsh=dmpidnM1OW9mcmdu" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" class="insta-icon">
+            </a>
+        </div>
+        <iframe src="https://nekomix.github.io/bongo.cat.nekomix/" allow="autoplay"></iframe>
+    </div>
+</body>
+</html>
